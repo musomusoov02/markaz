@@ -383,18 +383,14 @@ namespace Proyekt2222
                                     break;
 
                             }
+                    break;
 
-
-
-
+                    case 2:
+                        exit = true;
                             break;
 
-
                     }
-                }
-
             }
         }
     }
 }
-
