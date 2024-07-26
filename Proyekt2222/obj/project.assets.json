@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\Proyekt2222.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Source\\Repos\\musomusoov02\\markaz\\Proyekt2222\\Proyekt2222.csproj",
       "projectName": "Proyekt2222",
-      "projectPath": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\Proyekt2222.csproj",
+      "projectPath": "C:\\Users\\hp\\Source\\Repos\\musomusoov02\\markaz\\Proyekt2222\\Proyekt2222.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Source\\Repos\\musomusoov02\\markaz\\Proyekt2222\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
