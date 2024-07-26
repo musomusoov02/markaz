@@ -12,3 +12,18 @@ D:\C # Modul Mavzular\Proyekt2222\Proyekt2222\obj\Debug\net8.0\refint\Proyekt222
 D:\C # Modul Mavzular\Proyekt2222\Proyekt2222\obj\Debug\net8.0\Proyekt2222.pdb
 D:\C # Modul Mavzular\Proyekt2222\Proyekt2222\obj\Debug\net8.0\Proyekt2222.genruntimeconfig.cache
 D:\C # Modul Mavzular\Proyekt2222\Proyekt2222\obj\Debug\net8.0\ref\Proyekt2222.dll
+C:\Users\hp\Desktop\markaz\Proyekt2222\bin\Debug\net8.0\Proyekt2222.exe
+C:\Users\hp\Desktop\markaz\Proyekt2222\bin\Debug\net8.0\Proyekt2222.deps.json
+C:\Users\hp\Desktop\markaz\Proyekt2222\bin\Debug\net8.0\Proyekt2222.runtimeconfig.json
+C:\Users\hp\Desktop\markaz\Proyekt2222\bin\Debug\net8.0\Proyekt2222.dll
+C:\Users\hp\Desktop\markaz\Proyekt2222\bin\Debug\net8.0\Proyekt2222.pdb
+C:\Users\hp\Desktop\markaz\Proyekt2222\obj\Debug\net8.0\Proyekt2222.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\markaz\Proyekt2222\obj\Debug\net8.0\Proyekt2222.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\markaz\Proyekt2222\obj\Debug\net8.0\Proyekt2222.AssemblyInfo.cs
+C:\Users\hp\Desktop\markaz\Proyekt2222\obj\Debug\net8.0\Proyekt2222.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\markaz\Proyekt2222\obj\Debug\net8.0\Proyekt2222.sourcelink.json
+C:\Users\hp\Desktop\markaz\Proyekt2222\obj\Debug\net8.0\Proyekt2222.dll
+C:\Users\hp\Desktop\markaz\Proyekt2222\obj\Debug\net8.0\refint\Proyekt2222.dll
+C:\Users\hp\Desktop\markaz\Proyekt2222\obj\Debug\net8.0\Proyekt2222.pdb
+C:\Users\hp\Desktop\markaz\Proyekt2222\obj\Debug\net8.0\Proyekt2222.genruntimeconfig.cache
+C:\Users\hp\Desktop\markaz\Proyekt2222\obj\Debug\net8.0\ref\Proyekt2222.dll

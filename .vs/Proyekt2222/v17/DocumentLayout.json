@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\markaz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46799576-8CCC-45A0-9E10-B6669BE062EF}|Proyekt2222\\Proyekt2222.csproj|c:\\users\\hp\\desktop\\markaz\\proyekt2222\\markazservis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46799576-8CCC-45A0-9E10-B6669BE062EF}|Proyekt2222\\Proyekt2222.csproj|solutionrelative:proyekt2222\\markazservis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46799576-8CCC-45A0-9E10-B6669BE062EF}|Proyekt2222\\Proyekt2222.csproj|c:\\users\\hp\\desktop\\markaz\\proyekt2222\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46799576-8CCC-45A0-9E10-B6669BE062EF}|Proyekt2222\\Proyekt2222.csproj|solutionrelative:proyekt2222\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46799576-8CCC-45A0-9E10-B6669BE062EF}|Proyekt2222\\Proyekt2222.csproj|c:\\users\\hp\\desktop\\markaz\\proyekt2222\\mentorlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46799576-8CCC-45A0-9E10-B6669BE062EF}|Proyekt2222\\Proyekt2222.csproj|solutionrelative:proyekt2222\\mentorlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46799576-8CCC-45A0-9E10-B6669BE062EF}|Proyekt2222\\Proyekt2222.csproj|c:\\users\\hp\\desktop\\markaz\\proyekt2222\\proyekt2222.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{46799576-8CCC-45A0-9E10-B6669BE062EF}|Proyekt2222\\Proyekt2222.csproj|solutionrelative:proyekt2222\\proyekt2222.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MarkazServis.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\MarkazServis.cs",
+              "RelativeDocumentMoniker": "Proyekt2222\\MarkazServis.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\MarkazServis.cs",
+              "RelativeToolTip": "Proyekt2222\\MarkazServis.cs",
+              "ViewState": "AQIAAPQAAAAAAAAAAAAQwAEBAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:37:30.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Mentorlar.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\Mentorlar.cs",
+              "RelativeDocumentMoniker": "Proyekt2222\\Mentorlar.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\Mentorlar.cs",
+              "RelativeToolTip": "Proyekt2222\\Mentorlar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:35:14.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\Program.cs",
+              "RelativeDocumentMoniker": "Proyekt2222\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\Program.cs",
+              "RelativeToolTip": "Proyekt2222\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T05:02:28.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Proyekt2222.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\Proyekt2222.csproj",
+              "RelativeDocumentMoniker": "Proyekt2222\\Proyekt2222.csproj",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\markaz\\Proyekt2222\\Proyekt2222.csproj",
+              "RelativeToolTip": "Proyekt2222\\Proyekt2222.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-25T05:02:24.558Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

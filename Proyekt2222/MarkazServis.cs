@@ -1,16 +1,164 @@
-﻿namespace Proyekt2222
+﻿using System.Text.Json;
+
+namespace Proyekt2222
 {
     public class MarkazServis
-
     {
+
+
+        public MarkazServis()
+        {
+            ReadKurslar();
+            ReadArizalar();
+            ReadMentorlar();
+            ReadMarkazHaqida();
+        }
+
+        ///------------------------------------------------------------GetCurrent
+        public static string GetKurslarPath()
+        {
+            string currentPath = Directory.GetCurrentDirectory();
+            currentPath += "\\Kurslar.json";
+            return currentPath;
+        }
+
+        public static string GetMehtorlarPath()
+        {
+            string currentPath = Directory.GetCurrentDirectory();
+            currentPath += "\\Mehtorlar.json";
+            return currentPath;
+        }
+
+        public static string GetMarkazHaqidaPath()
+        {
+            string currentPath = Directory.GetCurrentDirectory();
+            currentPath += "\\MarkazHaqida.json";
+            return currentPath;
+        }
+
+        public static string GetArizalarPath()
+        {
+            string currentPath = Directory.GetCurrentDirectory();
+            currentPath += "\\Arizalar.json";
+            return currentPath;
+        }
+
+        ///------------------------------------------------------------Read
+        public void ReadKurslar()
+        {
+            if(File.Exists(GetKurslarPath()))
+            {
+                string json= string.Empty;
+                using (StreamReader ReadKurs=new StreamReader(GetKurslarPath()))
+                {
+                    json = ReadKurs.ReadToEnd();
+                }
+                kurs = JsonSerializer.Deserialize<List<Kurslar>>(json);
+            }
+            else
+            {
+                kurs= new List<Kurslar>();
+            }
+        }
+
+        public void ReadArizalar()
+        {
+            if (File.Exists(GetArizalarPath()))
+            {
+                string json = string.Empty;
+                using (StreamReader ReadArizalar = new StreamReader(GetArizalarPath()))
+                {
+                    json = ReadArizalar.ReadToEnd();
+                }
+                ariza = JsonSerializer.Deserialize<List<Arizalar>>(json);
+            }
+            else
+            {
+                ariza = new List<Arizalar>();
+            }
+        }
+
+        public void ReadMentorlar()
+        {
+            if (File.Exists(GetMehtorlarPath()))
+            {
+                string json = string.Empty;
+                using (StreamReader ReadKurs = new StreamReader(GetMehtorlarPath()))
+                {
+                    json = ReadKurs.ReadToEnd();
+                }
+                teacher = JsonSerializer.Deserialize<List<Mentorlar>>(json);
+            }
+            else
+            {
+                teacher = new List<Mentorlar>();
+            }
+        }
+        public void ReadMarkazHaqida()
+        {
+            if (File.Exists(GetMarkazHaqidaPath()))
+            {
+                string json = string.Empty;
+                using (StreamReader ReadKurs = new StreamReader(GetMarkazHaqidaPath()))
+                {
+                    json = ReadKurs.ReadToEnd();
+                }
+                markazHaqida = JsonSerializer.Deserialize<List<Markaz_haqida>>(json);
+            }
+            else
+            {
+                markazHaqida = new List<Markaz_haqida>();
+            }
+        }
+
+         ///------------------------------------------------------------Save
+        public void SaveKurslar()
+        {
+            string str = JsonSerializer.Serialize(kurs);
+            using (StreamWriter sw = new StreamWriter(GetKurslarPath()))
+            {
+                sw.WriteLine(str);
+            }
+        }
+
+        public void SaveArizalar()
+        {
+            string str = JsonSerializer.Serialize(ariza);
+            using (StreamWriter sw = new StreamWriter(GetArizalarPath()))
+            {
+                sw.WriteLine(str);
+            }
+        }
+        public void SaveMentorlar()
+        {
+            string str = JsonSerializer.Serialize(teacher);
+            using (StreamWriter sw = new StreamWriter(GetMehtorlarPath()))
+            {
+                sw.WriteLine(str);
+            }
+        }
+
+        public void SaveMarkazHaqida()
+        {
+            string str = JsonSerializer.Serialize(markazHaqida);
+            using (StreamWriter sw = new StreamWriter(GetMarkazHaqidaPath()))
+            {
+                sw.WriteLine(str);
+            }
+        }
+
+        ///-----------------------------------------------------------------------------------------------------------
+
+
         public List<Kurslar> kurs = new List<Kurslar>();
         public List<Mentorlar> teacher = new List<Mentorlar>();
         public List<Markaz_haqida> markazHaqida = new List<Markaz_haqida>();
         public List<Arizalar> ariza = new List<Arizalar>();
 
+        ///-----------------------------------------------------------------------------------science
+
         public void AddScience()
         {
-
             Console.Write("Science Name: ");
             string scienceName = Console.ReadLine();
 
@@ -20,17 +168,21 @@
                 Id = newId,
                 Name = scienceName
             };
-            kurs.Add(NewScience);
+            if (!string.IsNullOrEmpty(scienceName)) kurs.Add(NewScience);
+            else
+            {
+                Console.WriteLine("kiritilmadi: ");
+                return;
+            }
             Console.WriteLine("Successfully.");
+
+            SaveKurslar();
         }
 
 
         public void UpdateScience()
         {
-            foreach (var item in kurs)
-            {
-                Console.WriteLine($"{item.Id}: {item.Name}");
-            }
+            ListScience();
             Console.Write("scienceId: ");
             int scienceId;
             while (!int.TryParse(Console.ReadLine(), out scienceId))
@@ -49,16 +201,18 @@
             {
                 kursToUpdate.Name = scienceName;
             }
+            else
+            {
+                Console.WriteLine("kirilmadi:");
+                return;
+            }
             Console.WriteLine("successfully");
+            SaveKurslar();
         }
 
         public void DeleteScience()
         {
-            foreach (var item in kurs)
-            {
-                Console.WriteLine($"{item.Id}: {item.Name}");
-            }
-
+            ListScience();
             int scienceId;
             while (!int.TryParse(Console.ReadLine(), out scienceId))
             {
@@ -73,8 +227,8 @@
             {
                 Console.WriteLine("not found!");
             }
+            SaveKurslar();
         }
-
 
         public void ListScience()
         {
@@ -88,17 +242,16 @@
             else Console.WriteLine("Empty");
         }
 
-
         public void ClearScience()
         {
             kurs.Clear();
+            SaveKurslar();
         }
 
-        ///---------------------------------------------------------------------------
+        ///--------------------------------------------------------------------------- teacher
 
         public void AddTeacher()
         {
-
             Console.Write("Science Name: ");
             string TeacherName = Console.ReadLine();
 
@@ -110,15 +263,13 @@
             };
             teacher.Add(NewTeacher);
             Console.WriteLine("Successfully.");
+            SaveMentorlar();
         }
 
 
         public void UpdateTeacher()
         {
-            foreach (var item in teacher)
-            {
-                Console.WriteLine($"{item.Id}: {item.Name}");
-            }
+            ListTeacher();
             Console.Write("scienceId: ");
             int TeacherId;
             while (!int.TryParse(Console.ReadLine(), out TeacherId))
@@ -138,14 +289,12 @@
                 teacherToUpdate.Name = TeacherName;
             }
             Console.WriteLine("successfully");
+            SaveMentorlar();
         }
 
         public void DeleteTeacher()
         {
-            foreach (var item in teacher)
-            {
-                Console.WriteLine($"{item.Id}: {item.Name}");
-            }
+            ListTeacher();
 
             int TeacherId;
             while (!int.TryParse(Console.ReadLine(), out TeacherId))
@@ -161,6 +310,7 @@
             {
                 Console.WriteLine("not found!");
             }
+            SaveMentorlar();
         }
 
 
@@ -176,18 +326,16 @@
             else Console.WriteLine("Empty");
         }
 
-
         public void ClearTeacher()
         {
             teacher.Clear();
+            SaveMentorlar() ;
         }
 
-
-        /// --------------------------------------------------
+        /// --------------------------------------------------markaz
 
         public void AddMarkaz()
         {
-
             Console.Write("markaz Name: ");
             string MarkazName = Console.ReadLine();
 
@@ -199,6 +347,7 @@
             };
             markazHaqida.Add(NewMarkaz);
             Console.WriteLine("Successfully.");
+            SaveMarkazHaqida();
         }
 
         public void ListMarkaz()
@@ -207,63 +356,58 @@
             {
                 foreach (var item in markazHaqida)
                 {
-                    Console.WriteLine($"  {item.Name}");
+                    Console.WriteLine($"  {item.Name},");
                 }
             }
             else Console.WriteLine("Empty");
         }
 
-
         public void ClearMarkaz()
         {
             markazHaqida.Clear();
+            SaveMarkazHaqida() ;
         }
 
-        /// --------------------------------------------
-        /// 
+        /// --------------------------------------------applcation
 
         public void AddApplication()
         {
-
             Console.Write("Ariza Mazmuni: ");
             string MarkazName = Console.ReadLine();
-
             Console.Write("Kim tomonidan: ");
             string kimTomonidan = Console.ReadLine();
-
 
             int newId = ariza.Count > 0 ? ariza.Max(s => s.Id) + 1 : 1;
             Arizalar Newariza = new Arizalar
             {
-
                 Id = newId,
                 Ariza = MarkazName,
                 KimTomonidan = kimTomonidan
-
-
             };
             ariza.Add(Newariza);
             Console.WriteLine("Successfully.");
-
+            
+            SaveArizalar();
         }
 
         public void ListApplication()
         {
             if (ariza.Count > 0)
             {
+                Console.Clear();
+                Console.WriteLine($"No:|");
                 foreach (var item in ariza)
                 {
-                    Console.WriteLine($"  {item.Id}- Kim tomonidan: {item.KimTomonidan} [ Mazmuni: {item.Ariza} ]");
+                    Console.WriteLine($"{item.Id}. | F.I.SH => {item.KimTomonidan} || CONTENT => {item.Ariza} ");
                 }
             }
             else Console.WriteLine("Empty");
         }
 
-
         public void ClearApplication()
         {
             ariza.Clear();
+            SaveArizalar() ;
         }
-
     }
 }
